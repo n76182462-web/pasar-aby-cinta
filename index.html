@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pasar Aby Cinta | Pasar Tradisional</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f6ef;
+  color: #263b2d;
+  line-height: 1.6;
+}
+
+header {
+  background: #123d2b;
+  color: white;
+  padding: 16px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #f5ce75;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 90px 8%;
+  display: flex;
+  align-items: center;
+  color: white;
+  background:
+    linear-gradient(rgba(0,35,20,.72),rgba(0,35,20,.72)),
+    url("66426.jpg") center/cover;
+}
+
+
+.hero h1 {
+  font-size: clamp(35px, 6vw, 58px);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.hero p {
+  font-size: 17px;
+  margin-bottom: 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e8bd62;
+  color: #173b28;
+  padding: 13px 23px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: white;
+}
+
+section {
+  padding: 65px 7%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  color: #164c32;
+  font-size: 30px;
+}
+
+.section-title p {
+  color: #718075;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 16px;
+  min-height: 240px;
+  object-fit: cover;
+}
+
+.about-text h2 {
+  color: #164c32;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  background: #e9eee5;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.gallery-card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-card div {
+  padding: 15px;
+}
+
+.gallery-card h3 {
+  color: #164c32;
+}
+
+.umkm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 20px;
+}
+
+.umkm-card {
+  padding: 25px;
+  background: white;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,.07);
+}
+
+.umkm-card .emoji {
+  font-size: 42px;
+}
+
+.umkm-card h3 {
+  color: #164c32;
+  margin: 10px 0;
+}
+
+.location {
+  background: #e9eee5;
+  text-align: center;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+footer {
+  background: #123d2b;
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: 400px;
+    padding: 65px 7%;
+  }
+
+  section {
+    padding: 50px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌿 Pasar Aby Cinta</div>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#umkm">UMKM</a>
+    <a href="#lokasi">Lokasi</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="beranda">
+  <div class="hero-content">
+    <h1>Selamat Datang di Pasar Aby Cinta</h1>
+    <p>
+      Pusat aktivitas masyarakat yang menghadirkan
+      kebutuhan sehari-hari, hasil bumi, makanan,
+      dan jajanan tradisional khas Lombok.
+    </p>
+     
+
+    <a href="#tentang" class="btn">Jelajahi Pasar</a>
+  </div>
+</section>
+
+<section id="tentang">
+  <div class="about">
+    <img src="IMG_20261122_150933_473.png"
+         alt="Pasar Aby Cinta"
+         onerror="this.style.display='none'">
+
+    <div class="about-text">
+      <h2>Tentang Pasar Aby Cinta</h2>
+      <p>
+        Pasar Aby Cinta merupakan salah satu tempat
+        aktivitas ekonomi masyarakat di wilayah
+        Kembang Kerang 3, Aik Darek, Batukliang,
+        Lombok Tengah, Nusa Tenggara Barat.
+      </p>
+      <p>
+        Pasar menjadi tempat masyarakat memenuhi
+        kebutuhan sehari-hari sekaligus mendukung
+        pedagang dan usaha kecil masyarakat setempat.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h2>Galeri Pasar</h2>
+    <p>Beragam hasil bumi dan kuliner tradisional</p>
+  </div>
+
+  <div class=>
+
+
+
+
+    <div class=>
+         
+          
+      <img src="c:\Users\ASUS\Downloads\susana.jpg"
+       alt="Suasana pasar">
+       <div>
+        <h3>suasana pasar</h3>
+        <p>Aktivitas perdagangan masyarakat.</p>
+      </div>
+    </div>
+
+
+    <div class=>
+      <img src="c:\Users\ASUS\Downloads\pelecing.jpg"
+           alt="Makanan tradisional">
+      <div>
+        <h3>Makanan Tradisional</h3>
+        <p>Aneka kuliner khas masyarakat Lombok.</p>
+      </div>
+    </div>
+
+
+
+    <div class=>
+      <img src="c:\Users\ASUS\Downloads\sayur segar.jpg"
+           alt="Sayuran segar">
+      <div>
+        <h3>Sayuran Segar</h3>
+        <p>Berbagai hasil bumi untuk kebutuhan sehari-hari.</p>
+      </div>
+    </div>
+
+    <div class=>
+      <img src="c:\Users\ASUS\Downloads\tradisional.jpg"
+           alt="Jajanan tradisional">
+      <div>
+        <h3>Jajanan Tradisional</h3>
+        <p>Jajanan khas yang menjadi bagian budaya lokal.</p>
+      </div>
+    </div>
+
+
+
+    <div class=>
+      <img src="c:\Users\ASUS\Downloads\suasana.jpg"
+           alt="Kegiatan pasar">
+      <div>
+        <h3>Kegiatan Pasar</h3>
+        <p>Tempat bertemunya penjual dan pembeli.</p>
+      </div>
+    </div>
+
+
+
+  </div>
+</section>
+
+<section id="umkm">
+  <div class="section-title">
+    <h2>Produk dan UMKM</h2>
+    <p>Mendukung usaha kecil dan ekonomi masyarakat</p>
+  </div>
+
+  <div class="umkm-grid">
+
+    <div class="umkm-card">
+      <div class="emoji">🥬</div>
+      <h3>Sayuran</h3>
+      <p>Berbagai sayuran segar untuk kebutuhan rumah tangga.</p>
+    </div>
+
+    <div class="umkm-card">
+      <div class="emoji">🍌</div>
+      <h3>Hasil Bumi</h3>
+      <p>Produk pertanian dan hasil bumi masyarakat.</p>
+    </div>
+
+    <div class="umkm-card">
+      <div class="emoji">🍘</div>
+      <h3>Jajanan Lokal</h3>
+      <p>Aneka jajanan tradisional khas suku Sasak.</p>
+    </div>
+
+    <div class="umkm-card">
+      <div class="emoji">🛍️</div>
+      <h3>Kebutuhan Harian</h3>
+      <p>Berbagai barang kebutuhan sehari-hari.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="location" id="lokasi">
+  <div class="section-title">
+    <h2>Lokasi Pasar</h2>
+    <p>Kembang Kerang 3, Aik Darek, Batukliang, Lombok Tengah, NTB</p>
+  </div>
+
+  <a class="btn"
+     href="https://www.google.com/maps/search/?api=1&query=Pasar+Aby+Cinta+Kembang+Kerang+3+Aik+Darek+Lombok+Tengah"
+     target="_blank">
+     📍 Buka Google Maps
+  </a>
+
+  <iframe
+    class="map"
+    src="https://maps.google.com/maps?q=Kembang%20Kerang%203%20Aik%20Darek%20Lombok%20Tengah&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    loading="lazy"
+    allowfullscreen>
+  </iframe>
+</section>
+
+</main>
+
+<footer>
+  <h3>🌿 Pasar Aby Cinta</h3>
+  <p>Mendukung ekonomi dan UMKM masyarakat lokal.</p>
+  <p>© 2026 Pasar Aby Cinta | Website Informasi</p>
+  <p>Dibuat untuk Proyek Pembelajaran XI RPL</p>
+</footer>
+
+</body>
+</html>
